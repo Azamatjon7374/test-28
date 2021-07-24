@@ -1,4 +1,42 @@
-h1{
-    background-color: aliceblue;
-    color: gold;
+.menu{
+    list-style-type: none;
+    display: flex;
+
+}
+.menu_item{
+    border-right: 3px solid #000;
+}
+nav{
+    position: relative;
+    background-color: gold;
+}
+.menu_item:last-child{
+    border-right:none;
+}
+.menu_link{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+.megamenu{
+    position: absolute;
+    /* width: 100%; */
+    display: none;
+    flex-wrap: wrap;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-color: aqua;
+
+}
+.active:hover .megamenu{
+    display: flex;
+
+}
+.megamenu ul{
+    width: 300px;
+    background-color: antiquewhite;
+
 }
